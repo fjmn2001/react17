@@ -14,7 +14,7 @@ npm-test: CMD=run test
 
 .PHONY: npm
 npm npm-install npm-test:
-	@docker run --rm $(INTERACTIVE) --volume $(current-dir):/usr/src/app --user node \
+	docker run --rm $(INTERACTIVE) --volume $(current-dir):/usr/src/app --user node \
 		-w /usr/src/app node:16-alpine npm $(CMD)
 
 # 🐳 Docker Compose

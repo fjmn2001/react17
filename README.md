@@ -27,21 +27,11 @@
   <a href="https://github.com/fjmn2001/react17/issues">Request a feature</a>
 </p>
 
-### 🔥 Application execution
+## 🚀 Environment Setup
 
-1. Install all the dependencies and bring up the project with Docker executing: `make build`
-2. Then you'll have 1 app available:
-    1. [Getting Started](apps/getting-started): http://localhost:3010
+### 🐳 Needed tools
 
-### ✅ Tests execution
-
-1. Install the dependencies if you haven't done it previously: `make deps`
-2. Execute PHPUnit and Behat tests: `make npm-test`
-
-## 👩‍💻 Project explanation
-
-This project tries to be a roadmap/library for learning React.
-
-### ⛱️ Bounded Contexts
-
-* [Getting Started](apps/getting-started): Place to look in if you wanna see some code 🙂.
+1. [Install Docker](https://www.docker.com/get-started)
+2. Clone this project: `git clone https://github.com/fjmn2001/react17 react17`
+3. Move to the project folder: `cd react17/apps/getting-started`
+4. Read new readme.md in the folder to continue
