@@ -33,11 +33,6 @@
 2. Then you'll have 1 app available:
     1. [Getting Started](apps/getting-started): http://localhost:3010
 
-### ✅ Tests execution
-
-1. Install the dependencies if you haven't done it previously: `make deps`
-2. Execute PHPUnit and Behat tests: `make npm-test`
-
 ## 👩‍💻 Project explanation
 
 This project tries to be a roadmap/library for learning React.

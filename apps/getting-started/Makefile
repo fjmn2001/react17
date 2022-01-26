@@ -9,11 +9,8 @@ deps: npm-install
 .PHONY: npm-install
 npm-install: CMD=install
 
-.PHONY: npm-test
-npm-test: CMD=run test
-
 .PHONY: npm
-npm npm-install npm-test:
+npm npm-install:
 	docker run --rm $(INTERACTIVE) --volume $(current-dir):/usr/src/app --user node \
 		-w /usr/src/app node:16-alpine npm $(CMD)
 
