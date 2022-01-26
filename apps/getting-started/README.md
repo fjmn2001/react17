@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://medine.dev">
+    <img src="https://medine.dev:8919/img/logo2_SF_1.b961da65.svg" width="192px" height="192px"/>
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  🙇‍ React 17 & Typescript
+</h1>
 
-## Available Scripts
+<p align="center">
+    <a href="https://github.com/fjmn2001"><img src="https://img.shields.io/badge/fjmn2001-OS-green.svg?style=flat-square" alt="fjmn2001"/></a>
+    <a href="http://pro.fjmn2001"><img src="https://img.shields.io/badge/fjmn2001-PRO-black.svg?style=flat-square" alt="fjmn2001 Courses"/></a>
+    <a href="#"><img src="https://img.shields.io/badge/React-17.0-purple.svg?style=flat-square&logo=react" alt="React 17"/></a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  Examples of <strong>React 17 using good practices</strong> keeping the code as simple as possible.
+  <br />
+  <br />
+  Take a look, play and have fun with this.
+  <a href="https://github.com/fjmn2001/react17/stargazers">Stars are welcome 😊</a>
+  <br />
+  <br />
+  <a href="https://github.com/fjmn2001/react17/issues">Report a bug</a>
+  ·
+  <a href="https://github.com/fjmn2001/react17/issues">Request a feature</a>
+</p>
 
-### `npm start`
+## 🚀 Environment Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🐳 Needed tools
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. [Install Docker](https://www.docker.com/get-started)
+2. Clone this project: `git clone https://github.com/fjmn2001/react17 react17`
+3. Move to the project folder: `cd react17`
 
-### `npm test`
+### 🔥 Application execution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Install all the dependencies and bring up the project with Docker executing: `make build`
+2. Then you'll have 1 app available:
+    1. [Getting Started](apps/getting-started): http://localhost:3010
 
-### `npm run build`
+### ✅ Tests execution
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install the dependencies if you haven't done it previously: `make deps`
+2. Execute PHPUnit and Behat tests: `make npm-test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 👩‍💻 Project explanation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project tries to be a roadmap/library for learning React.
 
-### `npm run eject`
+### ⛱️ Bounded Contexts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Getting Started](apps/getting-started): Place to look in if you wanna see some code 🙂.
