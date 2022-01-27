@@ -1,5 +1,7 @@
 import Welcome from "./shared/components/Welcome";
 import Comment from "./shared/components/Comment";
+import Form from "./shared/components/Form";
+import Toggle from "./shared/components/Toggle";
 
 interface User {
     firstName: string
@@ -7,10 +9,6 @@ interface User {
 }
 
 export default function App() {
-    function formatName(user: User): string {
-        return user.firstName + ' ' + user.lastName;
-    }
-
     const user: User = {
         firstName: 'Harper',
         lastName: 'Perez'
@@ -24,6 +22,8 @@ export default function App() {
             <hr />
             <Comment author={ {name: "Francisco", avatarUrl: "#"} } text={ "First comment" } />
             <Comment author={ {name: "José", avatarUrl: "#"} } text={ "Second comment" } />
+            <Form />
+            <Toggle />
         </>
     );
 }
