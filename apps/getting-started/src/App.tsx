@@ -1,3 +1,6 @@
+import Welcome from "./shared/components/Welcome";
+import Comment from "./shared/components/Comment";
+
 interface User {
     firstName: string
     lastName: string
@@ -15,9 +18,12 @@ export default function App() {
 
     return (
         <>
-            <h1>
-                Hello, { formatName(user) }!
-            </h1>
+            <Welcome name={ user.firstName } />
+            <Welcome name={ user.lastName } />
+            <h2>It is { new Date().toLocaleTimeString() }.</h2>
+            <hr />
+            <Comment author={ {name: "Francisco", avatarUrl: "#"} } text={ "First comment" } />
+            <Comment author={ {name: "José", avatarUrl: "#"} } text={ "Second comment" } />
         </>
     );
 }
