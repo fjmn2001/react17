@@ -2,6 +2,7 @@ import Welcome from "./shared/components/Welcome";
 import Comment from "./shared/components/Comment";
 import Form from "./shared/components/Form";
 import Toggle from "./shared/components/Toggle";
+import LoginControl from "./conditional-rendering/components/LoginControl";
 
 interface User {
     firstName: string
@@ -24,6 +25,7 @@ export default function App() {
             <Comment author={ {name: "José", avatarUrl: "#"} } text={ "Second comment" } />
             <Form />
             <Toggle />
+            <LoginControl />
         </>
     );
 }
