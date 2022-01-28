@@ -3,6 +3,8 @@ import Comment from "./shared/components/Comment";
 import Form from "./shared/components/Form";
 import Toggle from "./shared/components/Toggle";
 import LoginControl from "./conditional-rendering/components/LoginControl";
+import Mailbox from "./conditional-rendering/components/Mailbox";
+import Page from "./conditional-rendering/components/Page";
 
 interface User {
     firstName: string
@@ -14,6 +16,7 @@ export default function App() {
         firstName: 'Harper',
         lastName: 'Perez'
     };
+    const messages = ['React', 'Re: React', 'Re:Re: React'];
 
     return (
         <>
@@ -26,6 +29,8 @@ export default function App() {
             <Form />
             <Toggle />
             <LoginControl />
+            <Mailbox unreadMessages={ messages } />
+            <Page />
         </>
     );
 }
