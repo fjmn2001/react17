@@ -7,6 +7,7 @@ import Mailbox from "./conditional-rendering/components/Mailbox";
 import Page from "./conditional-rendering/components/Page";
 import NumberList from "./lists-and-keys/components/NumberList";
 import Blog from "./lists-and-keys/components/Blog";
+import NameForm from "./forms/components/NameForm";
 
 interface User {
     firstName: string
@@ -39,7 +40,8 @@ export default function App() {
             <Mailbox unreadMessages={ messages } />
             <Page />
             <NumberList numbers={ numbers } />
-            <Blog posts={ posts } />,
+            <Blog posts={ posts } />
+            <NameForm />
         </>
     );
 }
