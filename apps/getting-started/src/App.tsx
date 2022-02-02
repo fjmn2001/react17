@@ -8,6 +8,7 @@ import Page from "./conditional-rendering/components/Page";
 import NumberList from "./lists-and-keys/components/NumberList";
 import Blog from "./lists-and-keys/components/Blog";
 import NameForm from "./forms/components/NameForm";
+import Calculator from "./lifting-state-up/components/Calculator";
 
 interface User {
     firstName: string
@@ -42,6 +43,7 @@ export default function App() {
             <NumberList numbers={ numbers } />
             <Blog posts={ posts } />
             <NameForm />
+            <Calculator />
         </>
     );
 }
