@@ -1,5 +1,4 @@
 import { ChangeEvent } from "react";
-import BoilingVerdict from "./BoilingVerdict";
 
 interface ScaleNameInterface {
     [char: string]: string
@@ -18,13 +17,8 @@ interface TemperatureInputInterface {
 
 
 const TemperatureInput = ({scale, temperature, onTemperatureChange}: TemperatureInputInterface) => {
-
-    //const [temperature, setTemperature] = useState('')
-
-
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         onTemperatureChange(e.target.value)
-        //setTemperature(e.target.value);
     }
 
     return (
@@ -33,8 +27,6 @@ const TemperatureInput = ({scale, temperature, onTemperatureChange}: Temperature
             <input
                 value={ temperature }
                 onChange={ handleChange } />
-            <BoilingVerdict
-                celsius={ parseFloat(temperature) } />
         </fieldset>
     );
 }
