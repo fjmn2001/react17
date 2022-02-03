@@ -9,6 +9,8 @@ import NumberList from "./lists-and-keys/components/NumberList";
 import Blog from "./lists-and-keys/components/Blog";
 import NameForm from "./forms/components/NameForm";
 import Calculator from "./lifting-state-up/components/Calculator";
+import WelcomeDialog from "./composition-vs-inheritance/components/WelcomeDialog";
+import App2 from "./composition-vs-inheritance/components/App2";
 
 interface User {
     firstName: string
@@ -44,6 +46,8 @@ export default function App() {
             <Blog posts={ posts } />
             <NameForm />
             <Calculator />
+            <WelcomeDialog />
+            <App2 />
         </>
     );
 }
