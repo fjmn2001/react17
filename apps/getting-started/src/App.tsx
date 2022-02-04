@@ -11,6 +11,9 @@ import NameForm from "./forms/components/NameForm";
 import Calculator from "./lifting-state-up/components/Calculator";
 import WelcomeDialog from "./composition-vs-inheritance/components/WelcomeDialog";
 import App2 from "./composition-vs-inheritance/components/App2";
+import FilterableProductTable from "./thinking-in-react/components/FilterableProductTable";
+import { Dispatch, useState } from "react";
+import { getProducts, Product } from "./thinking-in-react/repository/ProductsRepository";
 
 interface User {
     firstName: string
@@ -29,8 +32,18 @@ export default function App() {
         {id: 2, title: 'Installation', content: 'You can install React from npm.'}
     ];
 
+    //products
+    const [products, setProducts]: [products: Product[], setProducts: Dispatch<any>] = useState([])
+
+    const start = async () => {
+        const response = await getProducts();
+        setProducts(response);
+    }
+    start()
+
     return (
         <>
+            <FilterableProductTable products={ products } />
             <Welcome name={ user.firstName } />
             <Welcome name={ user.lastName } />
             <h2>It is { new Date().toLocaleTimeString() }.</h2>
