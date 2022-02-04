@@ -3,11 +3,24 @@ import ProductCategoryRow from "./ProductCategoryRow";
 import ProductRow from "./ProductRow";
 import { ReactElement } from "react";
 
-const ProductTable = ({products}: { products: Product[] }) => {
+interface ProductTableProps {
+    products: Product[],
+    filterText: string,
+    inStockOnly: boolean
+}
+
+const ProductTable = ({products, filterText, inStockOnly}: ProductTableProps) => {
     const rows: ReactElement[] = [];
     let lastCategory: string | null = null;
 
     products.forEach((product) => {
+        if (product.name.indexOf(filterText) === -1) {
+            return;
+        }
+        if (inStockOnly && !product.stocked) {
+            return;
+        }
+
         if (product.category !== lastCategory) {
             rows.push(
                 <ProductCategoryRow
