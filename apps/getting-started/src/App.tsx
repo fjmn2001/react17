@@ -5,6 +5,7 @@ export default function App() {
     const Home = lazy(() => import('./code-splitting/routes/Home'));
     const About = lazy(() => import('./code-splitting/routes/About'));
     const ForwardingRefs = lazy(() => import('./forwarding-refs/routes/Index'));
+    const Fragments = lazy(() => import('./fragments/routes/Index'));
 
     return (
         <>
@@ -14,6 +15,7 @@ export default function App() {
                         <Route path="/" element={ <Home /> } />
                         <Route path="/about" element={ <About /> } />
                         <Route path="/forwarding-refs" element={ <ForwardingRefs /> } />
+                        <Route path="/fragments" element={ <Fragments /> } />
                     </Routes>
                 </Suspense>
             </BrowserRouter>
